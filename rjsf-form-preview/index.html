@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RJSF Form Preview: see your form before you ship it | Inka Labs</title>
+<meta name="description" content="Open an rjsf.json form definition and see the form it produces, live in your browser. Nothing is uploaded.">
+<link rel="icon" href="../favicon.png">
+<link rel="stylesheet" href="../app.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="nav">
+      <a href="../"><img src="../wordmark.png" alt="Inka Labs home" width="760" height="240"></a>
+      <a class="back" href="../">← All tools</a>
+    </div>
+    <div class="tag">Developers</div>
+    <h1>RJSF Form Preview</h1>
+    <p class="pitch">For anyone who writes forms as JSON. Open your form definition and see the form people will fill in, without building or running your app.</p>
+    <div class="links">
+      <a class="btn primary" href="https://inka-labs.github.io/rjsf-form-preview/">Open the tool</a>
+      <a class="btn" href="#walkthrough">See how it works</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero-shot">
+  <div class="wrap">
+    <figure class="shot"><img src="img/01-overview.png" alt="A workshop registration form on the left with name, seats, session and lunch fields filled in, and the matching values as JSON on the right" width="1280" height="800"></figure>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="points">
+      <div><h3>See it straight away</h3><p>Drop in a file and the form appears, with its labels, help text, defaults and required marks.</p></div>
+      <div><h3>Nothing to install</h3><p>It is one web page. Open it in any browser and start.</p></div>
+      <div><h3>Your file stays with you</h3><p>The form definition is read inside the page and is not uploaded anywhere.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="walkthrough">
+  <div class="wrap">
+    <h2>A walk through RJSF Form Preview</h2>
+    <p class="lede">Here it is with a small workshop registration form, from an empty page to checked values.</p>
+    <ol class="steps">
+      <li>
+        <h3>Open the page</h3>
+        <p>The page starts empty and tells you what it expects: an <code>rjsf.json</code> file, the kind used by react-jsonschema-form. Each top-level entry in the file becomes one section of the form.</p>
+        <figure class="shot"><img src="img/02-start.png" alt="The empty starting page with a box that says Drop an rjsf.json file here" width="1280" height="800" loading="lazy"></figure>
+      </li>
+      <li>
+        <h3>Drop in your form definition</h3>
+        <p>Drag the file onto the page, or use <strong>Choose rjsf.json…</strong> at the top. The form is drawn at once, one card per section. Text boxes, number boxes, drop-down lists and tick boxes are chosen from the field types in your file, and the defaults are already filled in.</p>
+        <figure class="shot"><img src="img/03-form.png" alt="The workshop registration form just after loading, with sections for Your details, Session and Lunch, showing default values" width="1280" height="800" loading="lazy"><figcaption>Required fields carry a red star, and help text sits under the label.</figcaption></figure>
+      </li>
+      <li>
+        <h3>Fill it in and watch the values</h3>
+        <p>Type into the form as a user would. The panel on the right shows the values the form would send, updated with every change. Choices that swap part of the form, such as picking “Lunch included”, show their extra fields straight away.</p>
+        <figure class="shot"><img src="img/01-overview.png" alt="The form with a name, two seats and the afternoon session entered, and the same values shown as JSON in the right-hand panel" width="1280" height="800" loading="lazy"></figure>
+      </li>
+      <li>
+        <h3>Copy the values, or start again</h3>
+        <p><strong>Copy</strong> puts the values on your clipboard, ready to paste into a test or a bug report. <strong>Reset values</strong> returns every field to its default so you can try another path through the form.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="get" id="get">
+  <div class="wrap">
+    <h2>Get RJSF Form Preview</h2>
+    <p class="lede">It runs in any modern browser on any computer. There is nothing to download.</p>
+    <ol>
+      <li>Open the tool with the button below.</li>
+      <li>Drop your <code>rjsf.json</code> file onto the page.</li>
+      <li>To use it offline, save the single <code>index.html</code> file from the source code and open it from your computer.</li>
+    </ol>
+    <div class="links">
+      <a class="btn primary" href="https://inka-labs.github.io/rjsf-form-preview/">Open the tool</a>
+      <a class="btn" href="https://github.com/inka-labs/rjsf-form-preview">Source code</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Inka Labs</span>
+    <a href="https://github.com/inka-labs">github.com/inka-labs</a>
+  </div>
+</footer>
+</body>
+</html>

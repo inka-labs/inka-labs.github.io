@@ -1,0 +1,47 @@
+:root { --green:#1F4D3A; --green-deep:#173A2C; --cream:#FBF3E7; --paper:#FFFDF9; --ink:#22302A; --muted:#5B6B63; --accent:#C2552D; --accent-soft:#E9773F; --line:#E7DCCB; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:var(--cream); color:var(--ink); font:17px/1.6 "Avenir Next", "Segoe UI", system-ui, -apple-system, Roboto, sans-serif; }
+a { color:var(--accent); }
+img { max-width:100%; height:auto; }
+.wrap { max-width:960px; margin:0 auto; padding-inline:24px; }
+header { background:var(--green); color:var(--cream); }
+header .wrap { padding-block:22px 60px; }
+.nav { display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:44px; }
+.nav img { display:block; width:150px; margin-left:-9px; }
+.nav a.back { color:#DDE7E0; text-decoration:none; font-size:15px; font-weight:600; }
+.nav a.back:hover { color:var(--cream); text-decoration:underline; }
+.tag { font-size:13px; font-weight:600; letter-spacing:.04em; text-transform:uppercase; color:var(--accent-soft); margin-bottom:8px; }
+header h1 { font-size:clamp(34px, 6vw, 52px); line-height:1.1; margin:0 0 14px; font-weight:600; letter-spacing:-0.01em; }
+header p.pitch { margin:0 0 26px; max-width:34em; color:#DDE7E0; font-size:20px; }
+.links { display:flex; flex-wrap:wrap; gap:10px; }
+.btn { display:inline-block; text-decoration:none; font-weight:600; font-size:15px; padding:10px 16px; border-radius:9px; border:1.5px solid var(--green); color:var(--green); }
+.btn.primary { background:var(--green); color:var(--cream); }
+.btn:hover { background:var(--green-deep); border-color:var(--green-deep); color:var(--cream); }
+.btn:focus-visible { outline:3px solid var(--accent-soft); outline-offset:2px; }
+header .btn { border-color:var(--cream); color:var(--cream); }
+header .btn.primary { background:var(--cream); color:var(--green); }
+header .btn:hover { background:var(--accent-soft); border-color:var(--accent-soft); color:var(--green-deep); }
+section { padding-block:52px; }
+h2 { font-size:28px; margin:0 0 10px; letter-spacing:-0.01em; }
+.lede { color:var(--muted); margin:0 0 30px; max-width:40em; }
+.hero-shot { margin-top:-36px; padding-block:0; }
+.shot { margin:0; border:1px solid var(--line); border-radius:12px; overflow:hidden; background:var(--paper); box-shadow:0 12px 32px -18px rgba(23,58,44,.45); }
+.shot img { display:block; width:100%; }
+.shot figcaption { padding:10px 16px; font-size:14px; color:var(--muted); border-top:1px solid var(--line); }
+.points { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:26px; }
+.points h3 { margin:0 0 6px; font-size:18px; color:var(--green); }
+.points p { margin:0; color:var(--muted); }
+.steps { list-style:none; margin:0; padding:0; counter-reset:step; display:grid; gap:56px; }
+.steps > li { counter-increment:step; }
+.steps h3 { font-size:22px; margin:0 0 8px; display:flex; align-items:baseline; gap:12px; }
+.steps h3::before { content:counter(step); flex:none; display:inline-grid; place-items:center; width:34px; height:34px; border-radius:50%; background:var(--green); color:var(--cream); font-size:16px; transform:translateY(-2px); }
+.steps p { margin:0 0 18px; max-width:40em; color:var(--ink); }
+.band { background:var(--paper); border-block:1px solid var(--line); }
+.get ol { margin:0; padding-left:1.3em; max-width:40em; }
+.get li { margin-bottom:8px; }
+.get .links { margin-top:22px; }
+code { background:#F1E7D6; padding:2px 6px; border-radius:5px; font-size:.92em; }
+footer { background:var(--green); color:#DDE7E0; font-size:15px; }
+footer .wrap { padding-block:28px; display:flex; flex-wrap:wrap; gap:8px 24px; justify-content:space-between; }
+footer a { color:var(--cream); }
