@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inka Labs: simple tools for everyday work</title>
+<meta name="description" content="Inka Labs builds simple tools for everyday work: for businesses, households, schools and teams.">
+<link rel="icon" href="favicon.png">
+<meta property="og:title" content="Inka Labs">
+<meta property="og:description" content="Simple tools for everyday work.">
+<meta property="og:image" content="https://inka-labs.github.io/favicon.png">
+<style>
+  :root { --green:#1F4D3A; --green-deep:#173A2C; --cream:#FBF3E7; --paper:#FFFDF9; --ink:#22302A; --muted:#5B6B63; --accent:#C2552D; --accent-soft:#E9773F; --line:#E7DCCB; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--cream); color:var(--ink); font:17px/1.6 "Avenir Next", "Segoe UI", system-ui, -apple-system, Roboto, sans-serif; }
+  a { color:var(--accent); }
+  .wrap { max-width:1040px; margin:0 auto; padding-inline:24px; }
+  header { background:var(--green); color:var(--cream); }
+  header .wrap { padding-block:56px 64px; }
+  header img { display:block; width:min(380px, 80%); height:auto; margin-left:-22px; }
+  header h1 { font-size:clamp(30px, 5vw, 46px); line-height:1.15; margin:20px 0 14px; font-weight:600; letter-spacing:-0.01em; max-width:16em; }
+  header p { margin:0; max-width:36em; color:#DDE7E0; font-size:19px; }
+  section { padding-block:56px; }
+  h2 { font-size:26px; margin:0 0 8px; letter-spacing:-0.01em; }
+  .lede { color:var(--muted); margin:0 0 28px; max-width:40em; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(290px, 1fr)); gap:18px; }
+  .card { background:var(--paper); border:1px solid var(--line); border-radius:14px; padding:22px 22px 20px; display:flex; flex-direction:column; }
+  .card h3 { margin:0 0 4px; font-size:20px; }
+  .tag { font-size:13px; font-weight:600; letter-spacing:.04em; text-transform:uppercase; color:var(--accent); margin-bottom:10px; }
+  .card p { margin:0 0 18px; color:var(--muted); flex:1; }
+  .links { display:flex; flex-wrap:wrap; gap:10px; }
+  .btn { display:inline-block; text-decoration:none; font-weight:600; font-size:15px; padding:8px 14px; border-radius:9px; border:1.5px solid var(--green); color:var(--green); }
+  .btn.primary { background:var(--green); color:var(--cream); }
+  .btn:hover { background:var(--green-deep); border-color:var(--green-deep); color:var(--cream); }
+  .btn:focus-visible { outline:3px solid var(--accent-soft); outline-offset:2px; }
+  .soon { border-style:dashed; background:transparent; }
+  .soon .tag { color:var(--muted); }
+  .values { background:var(--paper); border-block:1px solid var(--line); }
+  .values .grid { grid-template-columns:repeat(auto-fit, minmax(230px, 1fr)); gap:28px; }
+  .values h3 { margin:0 0 6px; font-size:18px; color:var(--green); }
+  .values p { margin:0; color:var(--muted); }
+  footer { background:var(--green); color:#DDE7E0; font-size:15px; }
+  footer .wrap { padding-block:28px; display:flex; flex-wrap:wrap; gap:8px 24px; justify-content:space-between; }
+  footer a { color:var(--cream); }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <img src="wordmark.png" alt="Inka Labs" width="760" height="240">
+    <h1>Simple tools for everyday work.</h1>
+    <p>Inka Labs builds practical software for businesses, households, schools and teams. Each tool starts from a job someone needed done.</p>
+  </div>
+</header>
+
+<main>
+<section>
+  <div class="wrap">
+    <h2>Tools</h2>
+    <p class="lede">Ready to use today.</p>
+    <div class="grid">
+      <article class="card">
+        <div class="tag">Business</div>
+        <h3>Vina Tsama</h3>
+        <p>Orders, deliveries, payments and reports for a food business, with installers for Mac and Windows.</p>
+        <div class="links"><a class="btn primary" href="https://github.com/inka-labs/vina-tsama-releases/releases/latest">Download</a></div>
+      </article>
+      <article class="card">
+        <div class="tag">Household</div>
+        <h3>Pesa Ledger</h3>
+        <p>A private household ledger: budgets, what was spent, month-on-month and year-on-year comparisons, and goals.</p>
+        <div class="links"><a class="btn primary" href="https://github.com/inka-labs/pesa-ledger/releases/latest">Download</a><a class="btn" href="https://github.com/inka-labs/pesa-ledger">Source</a></div>
+      </article>
+      <article class="card">
+        <div class="tag">Fitness</div>
+        <h3>Rep Book</h3>
+        <p>A workout log: sets and reps for each exercise, body weight, a week view, a year calendar, targets and progress charts.</p>
+        <div class="links"><a class="btn" href="https://github.com/inka-labs/rep-book">Source</a></div>
+      </article>
+      <article class="card">
+        <div class="tag">Documents</div>
+        <h3>Docling Studio</h3>
+        <p>A point-and-click screen for Docling's document conversion tools: every option, and a way to browse what it found.</p>
+        <div class="links"><a class="btn" href="https://github.com/inka-labs/docling-studio">Source</a></div>
+      </article>
+      <article class="card">
+        <div class="tag">Developers</div>
+        <h3>RJSF Form Preview</h3>
+        <p>Open an rjsf.json form definition and see the form it produces, live in the browser.</p>
+        <div class="links"><a class="btn primary" href="https://inka-labs.github.io/rjsf-form-preview/">Open</a><a class="btn" href="https://github.com/inka-labs/rjsf-form-preview">Source</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>In the works</h2>
+    <p class="lede">Being built now.</p>
+    <div class="grid">
+      <article class="card soon">
+        <div class="tag">Schools</div>
+        <h3>Shule Yetu</h3>
+        <p>A school management system for a Kenyan school: students, classes, marks and report forms, run on one computer at the school.</p>
+      </article>
+      <article class="card soon">
+        <div class="tag">Learning</div>
+        <h3>Hadithi</h3>
+        <p>Type a lesson and get a children's comic, with a read-aloud voice, a quiz and an activity. In English, Kiswahili and French.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="values">
+  <div class="wrap">
+    <div class="grid">
+      <div><h3>Practical</h3><p>Each tool starts from a job someone needed done.</p></div>
+      <div><h3>Easy to start</h3><p>Clear screens, sensible defaults, and no training needed.</p></div>
+      <div><h3>Yours to keep</h3><p>Your data stays under your control.</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Inka Labs</span>
+    <a href="https://github.com/inka-labs">github.com/inka-labs</a>
+  </div>
+</footer>
+</body>
+</html>
