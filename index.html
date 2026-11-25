@@ -10,7 +10,7 @@
 <meta property="og:description" content="Simple tools for everyday work.">
 <meta property="og:image" content="https://inka-labs.github.io/favicon.png">
 <style>
-  :root { --green:#1F4D3A; --green-deep:#173A2C; --cream:#FBF3E7; --paper:#FFFDF9; --ink:#22302A; --muted:#5B6B63; --accent:#C2552D; --accent-soft:#E9773F; --line:#E7DCCB; }
+  :root { --green:#1F4D3A; --green-deep:#173A2C; --cream:#FBF3E7; --paper:#FFFDF9; --ink:#22302A; --muted:#5B6B63; --accent:#A8441F; --accent-soft:#E9773F; --line:#E7DCCB; }
   * { box-sizing:border-box; }
   body { margin:0; background:var(--cream); color:var(--ink); font:17px/1.6 "Avenir Next", "Segoe UI", system-ui, -apple-system, Roboto, sans-serif; }
   a { color:var(--accent); }
@@ -37,7 +37,8 @@
   .btn:focus-visible { outline:3px solid var(--accent-soft); outline-offset:2px; }
   .soon { border-style:dashed; background:transparent; }
   .soon .tag { color:var(--muted); }
-  .values { background:var(--paper); border-block:1px solid var(--line); }
+  .values { background:var(--paper); border-block:1px solid var(--line); padding-inline:24px; }
+  .values > .wrap { padding-inline:0; }
   .values .grid { grid-template-columns:repeat(auto-fit, minmax(230px, 1fr)); gap:28px; }
   .values h3 { margin:0 0 6px; font-size:18px; color:var(--green); }
   .values p { margin:0; color:var(--muted); }
